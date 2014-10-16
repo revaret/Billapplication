@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ranjith.billapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+    
+    <supports-screens android:anyDensity="true" />
+    
+    <uses-permission android:name="android.permission.BLUETOOTH" />    
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    
+    <permission android:name="android.permission.BLUETOOTH" android:label="BLUETOOTH"></permission>
+<permission android:name="android.permission.BLUETOOTH_ADMIN"></permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".FrontActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BillActivity"
+            android:label="@string/title_activity_bill"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".UpdateActivity"
+            android:label="@string/title_activity_update" >
+        </activity>
+        <activity
+            android:name=".AddStoreActivity"
+            android:label="@string/title_activity_add_store" >
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name=".AddItemActivity"
+            android:label="@string/title_activity_add_item" >
+        </activity>
+        <activity
+            android:name=".UpdateEditActivity"
+            android:label="@string/title_activity_update_edit" >
+        </activity>
+        <activity
+            android:name=".RegEditActivity"
+            android:label="@string/title_activity_reg_edit" >
+        </activity>
+        <activity
+            android:name=".PrintScreenActivity"
+            android:label="@string/title_activity_print_screen"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".BluetoothActivity"
+            android:label="@string/title_activity_bluetooth" >
+        </activity>
+    </application>
+
+</manifest>
